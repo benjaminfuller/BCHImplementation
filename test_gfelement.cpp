@@ -453,7 +453,7 @@ int main()
       //-------------------------------------------------------------
       try {
          cout << "\nACTION: E = GFexponentiate(A,2)\n";
-         E = GFexponentiate(A,2);
+         E = GFexp(A,2);
          cout << "RESULT: E = " << E;
       }
       catch(ErrorCode e) { cout << e << endl; }
@@ -474,7 +474,7 @@ int main()
       //-------------------------------------------------------------
       try {
          cout << "\nACTION: E = GFexponentiate(A,18)\n";
-         E = GFexponentiate(A,18);
+         E = GFexp(A,18);
          cout << "RESULT: E = " << E;
       }
       catch(ErrorCode e) { cout << e << endl; }
@@ -495,7 +495,7 @@ int main()
       //-------------------------------------------------------------
       try {
          cout << "\nACTION: E = GFexponentiate(A,137)\n";
-         E = GFexponentiate(A,137);
+         E = GFexp(A,137);
          cout << "RESULT: E = " << E;
       }
       catch(ErrorCode e) { cout << e << endl; }

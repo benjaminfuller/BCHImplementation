@@ -22,6 +22,9 @@ OBJS   = gfelement.o  galoisfield.o  polynomial_arith.o  modular_arith.o
 test_gfelement: test_gfelement.cpp $(OBJS)
 	$(CC) $(CFLAGS) test_gfelement test_gfelement.cpp $(OBJS)
 
+sample_app_1: sample_app_1.cpp $(OBJS)
+	$(CC) $(CFLAGS) sample_app_1 sample_app_1.cpp $(OBJS)
+
 gfelement.o: gfelement.h gfelement.cpp typedefs.h
 	$(CC) $(LFLAGS) gfelement.cpp
 
